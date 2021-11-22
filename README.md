@@ -1,0 +1,2 @@
+# getNotionToken
+get Notion token
