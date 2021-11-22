@@ -1,2 +1,2 @@
 # getNotionToken
-get Notion token
+Get Notion Oauth2 certification

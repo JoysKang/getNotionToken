@@ -1,0 +1,7 @@
+{
+  "client_id": "531948ca-Notion bot client id",
+  "client_secret": "secret_Notion bot client secret",
+  "redirect_uri": "server address",
+  "sentry_address": "sentry_address",
+  "key": "AES key"
+}
