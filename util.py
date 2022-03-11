@@ -7,8 +7,7 @@ import hashlib
 def load_json(file_path="../conf.json"):
     try:
         with open(file_path, 'r') as file:
-            data = json.load(file)
-            return data
+            return json.load(file)
     except:
         return {}
 
@@ -38,7 +37,7 @@ class AESCipher:
         return s + (self.bs - len(s.encode()) % self.bs) * chr(self.bs - len(s.encode()) % self.bs)
 
     def _unpad(self, s):
-        return s[:-ord(s[len(s) - 1:])]
+        return s[:-ord(s[-1:])]
 
 
 if __name__ == "__main__":

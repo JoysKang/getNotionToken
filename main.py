@@ -26,8 +26,7 @@ def get_address():
               f"&client_id={CLIENT_ID}" \
               f"&redirect_uri={REDIRECT_URI}" \
               "&response_type=code"
-    state = request.GET.get("state", "")
-    if state:
+    if state := request.GET.get("state", ""):
         state = AES.encrypt(state)  # 加密
         address += f"&state={state}"
 
